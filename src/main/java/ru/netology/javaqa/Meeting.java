@@ -2,10 +2,10 @@ package ru.netology.javaqa;
 
 public class Meeting extends Task {
     protected String start;
-    protected int topic;
+    protected String topic;
     protected String project;
 
-    public Meeting(int id, String start, int topic, String project) {
+    public Meeting(int id, String start, String topic, String project) {
         super(id); // вызов родительского конструктора
         this.start = start; // заполнение своих полей
         this.topic = topic; // тема обсуждения
@@ -16,7 +16,7 @@ public class Meeting extends Task {
         return start;
     }
 
-    public int getTopic() {
+    public String getTopic() {
         return topic;
     }
 
